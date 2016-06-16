@@ -17,6 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+  //  self.middleLabel.font =[UIFont boldSystemFontOfSize:40];
+ //   self.middleLabel.textAligment = NSTextAlignmentCenter; (c code)
+    
+    
+    
     // Do any additional setup after loading the view.
     self.threeOfSpades = [[FISCard alloc] initWithSuit:@"♠️"
                                                   rank:@"3"];
@@ -34,7 +40,7 @@
                                                 rank:@"10"];
 }
 
-- (IBAction)threeOfSpades:(id)threeOfSpades {
+- (IBAction)threeOfSpades:(id)sender {
     
     self.topLabel.text =self.threeOfSpades.cardLabel;
     
@@ -63,7 +69,7 @@
     
     self.bottomLabel.text =self.eightOfDiamonds.cardLabel;
     
-
+//[self setLabelsForCard: self.eightOfDiamonds];
 
     
 }
@@ -76,6 +82,21 @@
     self.middleLabel.text =self.tenOfHearts.cardLabel;
     
     self.bottomLabel.text =self.tenOfHearts.cardLabel;
+    
+    
+    //refractor and then, extract...
+    
+    
+//    -(void) setLabelsForCard: (FISCard *)card {
+//        
+//        self.topLabel.text =card.cardLabel;
+//        
+//        self.middleLabel.text =card.cardLabel;
+//        
+//        self.bottomLabel.text = card.cardLabel;
+//        
+//        
+//    }
     
     
 }
